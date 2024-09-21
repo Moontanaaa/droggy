@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+/* Styles pour Chrome, Safari, Edge */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.552);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+/* Styles pour Firefox */
+.scroll-container {
+    scrollbar-width: thin;
+    scrollbar-color: #000000 transparent; /* Couleur de la barre et de l'arrière-plan */
+}
+.scroll-container:hover {
+    scrollbar-color: #ffffff00 transparent; /* Couleur au survol */
+}
+
+body {
+    cursor: url('https://icons8.com/icon/quic9RHDjHqf/cursor'), ; /* Remplace par le chemin de ton image */
+}

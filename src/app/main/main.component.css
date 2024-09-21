@@ -1,0 +1,84 @@
+.bg-image {
+    background-image: url('https://images.pexels.com/photos/7230243/pexels-photo-7230243.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    /* Pour l'overlay */
+    min-height: 100vh;
+    /* Assure que la section prend toute la hauteur */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Overlay sombre */
+}
+
+.content {
+    z-index: 2;
+    color: white;
+    padding: 2rem;
+    max-width: 600px;
+    /* Limite la largeur pour les grands écrans */
+    text-align: center;
+    /* Centrer le texte */
+}
+
+.text-highlight {
+    color: rgb(220, 20, 60);
+    font-weight: bold;
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: rgb(220, 20, 60);
+    border: none;
+    color: white;
+    /* Changer la couleur du texte pour le bouton */
+    font-size: 1.25rem;
+    padding: 0.75rem 2rem;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    /* Coins arrondis */
+}
+
+.btn-primary:hover {
+    background-color: rgb(200, 0, 0);
+    transform: scale(1.05);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .display-1 {
+        font-size: 2rem;
+        /* Ajuste la taille de la police pour les petits écrans */
+    }
+
+    .lead {
+        font-size: 1rem;
+        /* Ajuste la taille de la police pour la description */
+    }
+
+    .btn-primary {
+        width: 100%;
+        /* Bouton plein écran sur mobile */
+        padding: 1rem;
+        /* Plus de padding pour un meilleur clic */
+    }
+
+    .content {
+        padding: 1rem;
+        /* Réduire le padding sur les petits écrans */
+    }
+}
+
+/* Animation classes */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+.animate__animated {
+    animation-duration: 1.5s;
+}

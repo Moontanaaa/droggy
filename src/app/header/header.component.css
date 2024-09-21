@@ -1,0 +1,107 @@
+/* Appliquer un fond noir au header */
+.highlight {
+    color: red;
+}
+
+header {
+    position: relative;
+    /* ou sticky si tu veux qu'il reste en haut */
+    top: 0;
+    z-index: 1000;
+    /* S'assurer que le header est au-dessus */
+    width: 100%;
+    /* S'étendre sur toute la largeur */
+}
+
+/* Style de base de la navbar */
+.navbar {
+    background-color: transparent;
+    /* Fond transparent car le header est déjà noir */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Quand on scrolle, on ajoute un fond opaque */
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Transition et survol pour les liens */
+.nav-link {
+    color: white;
+    padding: 10px 15px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.nav-link:hover {
+    color: rgb(255, 50, 50);
+    transform: translateY(-2px);
+}
+
+/* Animation lors du scroll */
+.navbar.hidden {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+}
+
+/* Style pour les mobiles, tablettes et écrans moyens */
+@media (max-width: 1000px) {
+
+    /* Correction de l'unité */
+    .navbar-nav {
+        background-color: rgba(0, 0, 0, 0.9);
+        /* Fond noir pour le menu déroulant */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 20;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .navbar-toggler {
+        border: none;
+        outline: none;
+    }
+
+    .navbar-toggler-icon {
+        background-image: none;
+        width: 30px;
+        height: 3px;
+        background-color: rgb(255, 50, 50);
+        position: relative;
+    }
+
+    .navbar-toggler-icon::before,
+    .navbar-toggler-icon::after {
+        content: '';
+        background-color: rgb(255, 50, 50);
+        width: 30px;
+        height: 3px;
+        position: absolute;
+        left: 0;
+        transition: transform 0.3s ease;
+    }
+
+    .navbar-toggler-icon::before {
+        top: -8px;
+    }
+
+    .navbar-toggler-icon::after {
+        top: 8px;
+    }
+
+    /* Effet sur l'icône burger quand le menu est ouvert */
+    .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+        background-color: transparent;
+    }
+}

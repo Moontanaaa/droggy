@@ -1,0 +1,29 @@
+.footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px 0; /* Espacement vertical */
+    position: relative; /* Position relative pour le contenu */
+}
+
+.footer p {
+    margin: 0; /* Supprime les marges par défaut */
+}
+
+.social-icons {
+    display: flex; /* Utilise flexbox pour aligner les éléments */
+    justify-content: center; /* Centre les éléments */
+    margin-top: 10px; /* Espace au-dessus des icônes sociales */
+}
+
+.social-icons li {
+    margin: 0 10px; /* Espacement entre les icônes */
+}
+
+.social-icons a {
+    text-decoration: none; /* Supprime le soulignement */
+    color: white; /* Couleur des liens */
+    transition: color 0.3s; /* Transition douce pour la couleur */
+}
+
+.social-icons a:hover {
+    color: red; /* Change la couleur au survol */
+}

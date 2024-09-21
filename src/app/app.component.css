@@ -1,0 +1,12 @@
+:host {
+    display: block; /* Assure-toi que le composant prend toute la largeur */
+    height: 100vh; /* Prend toute la hauteur de la fenêtre */
+    background-image: url('https://images.pexels.com/photos/7230243/pexels-photo-7230243.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Vérifie que le chemin est correct */
+    background-size: cover; /* Couvre tout le conteneur */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Pas de répétition de l'image */
+    background-attachment: fixed; /* Garder l'image fixe lors du défilement */
+    z-index: -100;
+}
+
+
