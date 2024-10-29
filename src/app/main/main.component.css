@@ -35,9 +35,9 @@
 
 /* Button styles */
 .btn-primary {
-    background-color: rgb(220, 20, 60);
+    background-color: rgb(255, 255, 255);
     border: none;
-    color: white;
+    color: red;
     /* Changer la couleur du texte pour le bouton */
     font-size: 1.25rem;
     padding: 0.75rem 2rem;
@@ -47,7 +47,7 @@
 }
 
 .btn-primary:hover {
-    background-color: rgb(200, 0, 0);
+    background-color: rgba(255, 255, 255, 0.632);
     transform: scale(1.05);
 }
 

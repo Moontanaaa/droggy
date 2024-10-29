@@ -1,33 +1,30 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top shadow">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <h1 class="display-4">Druggy<span class="highlight">.com</span></h1>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <h1 class="display-4">Druggy<span class="highlight">.com</span></h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#drogues">Les drogues</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Plus d'Information</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Nous Contacter</a>
-                    </li>
-                </ul>
-            </div>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#" (click)="collapseMenu()">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#drogues" (click)="collapseMenu()">Les drogues</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" (click)="collapseMenu()">Espace Commentaires</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link contact-link" href="#" (click)="collapseMenu()">Nous Contacter</a>
+            </li>            
+          </ul>
         </div>
+      </div>
     </nav>
-</header>
-
-
-
-
+  </header>
+  

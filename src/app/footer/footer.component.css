@@ -1,29 +1,34 @@
 .footer {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: #343a40; /* Couleur de fond sombre */
     padding: 20px 0; /* Espacement vertical */
-    position: relative; /* Position relative pour le contenu */
 }
 
-.footer p {
-    margin: 0; /* Supprime les marges par défaut */
+.footer a {
+    transition: color 0.3s;
+    text-decoration: none; /* Pas de soulignement */
 }
 
-.social-icons {
-    display: flex; /* Utilise flexbox pour aligner les éléments */
-    justify-content: center; /* Centre les éléments */
-    margin-top: 10px; /* Espace au-dessus des icônes sociales */
+.footer a:hover {
+    color: #ffc107; /* Couleur au survol */
 }
 
-.social-icons li {
-    margin: 0 10px; /* Espacement entre les icônes */
+.footer ul {
+    padding: 0; /* Pas de padding pour la liste */
 }
 
-.social-icons a {
-    text-decoration: none; /* Supprime le soulignement */
-    color: white; /* Couleur des liens */
-    transition: color 0.3s; /* Transition douce pour la couleur */
+.footer li {
+    list-style: none; /* Pas de puces */
 }
 
-.social-icons a:hover {
-    color: red; /* Change la couleur au survol */
+/* Styles pour la responsivité */
+@media (max-width: 768px) {
+    .footer ul {
+        flex-direction: column; /* Colonne pour les petits écrans */
+        align-items: center; /* Centrer les éléments */
+    }
+    
+    .footer li {
+        margin-bottom: 10px; /* Espacement entre les éléments */
+    }
 }
+

@@ -43,6 +43,19 @@ header {
     transform: translateY(-100%);
     transition: transform 0.3s ease;
 }
+.contact-link {
+    background-color: rgb(255, 50, 50);
+    border-radius: 10px; /* Coins arrondis */
+    padding: 10px 15px; /* Espacement intérieur */
+    transition: background-color 0.3s, color 0.3s; /* Transition pour le survol */
+    color: white;
+}
+
+.contact-link:hover {
+    background-color: rgba(255, 0, 0, 0.1); /* Couleur de fond au survol */
+    color: rgb(255, 50, 50); /* Couleur de texte au survol */
+    background-color: white;
+}
 
 /* Style pour les mobiles, tablettes et écrans moyens */
 @media (max-width: 1000px) {
@@ -105,3 +118,6 @@ header {
         background-color: transparent;
     }
 }
+
+
+  

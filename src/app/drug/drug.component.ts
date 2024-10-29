@@ -1,12 +1,21 @@
+// drug.component.ts
 import { Component } from '@angular/core';
+
+interface Photo {
+  src: string;
+  alt: string;
+  title: string;
+  description: string;
+}
 
 @Component({
   selector: 'app-drug',
-  standalone: true,
-  imports: [],
   templateUrl: './drug.component.html',
-  styleUrl: './drug.component.css'
+  styleUrls: ['./drug.component.css']
 })
 export class DrugComponent {
-
+  
 }
+
+
+

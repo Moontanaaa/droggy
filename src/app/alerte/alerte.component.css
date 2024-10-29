@@ -1,0 +1,66 @@
+.container {
+    padding: 20px;
+}
+
+/* Amélioration du texte */
+h2,
+h3,
+h4 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.lead {
+    font-size: 1.1rem;
+    /* Légèrement plus grand pour une meilleure lisibilité */
+}
+
+/* Styles pour les liens */
+.drug-link {
+    color: #007bff;
+    /* Couleur du lien */
+    font-weight: bold;
+    /* Gras pour une meilleure visibilité */
+    padding: 10px;
+    /* Espacement autour du lien */
+    display: block;
+    /* Permet de cliquer sur toute la zone */
+    border-radius: 5px;
+    /* Coins arrondis */
+    transition: background-color 0.3s;
+}
+
+
+/* Style pour les éléments de la liste */
+.list-group-item {
+    background-color: #f8f9fa;
+    /* Couleur de fond douce */
+    border: 1px solid #dee2e6;
+    /* Bordure légère */
+    border-radius: 5px;
+    /* Coins arrondis */
+    margin-bottom: 10px;
+    /* Espacement entre les éléments */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.list-group-item:hover {
+    background-color: #e2e6ea;
+    /* Couleur plus foncée au survol */
+}
+
+/* Espacement pour les sections */
+.my-5 {
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem;
+    /* Espace entre les éléments */
+}
+
+.mb-2 {
+    margin-bottom: 0.5rem;
+    /* Espace entre les éléments de la liste */
+}
